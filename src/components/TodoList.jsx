@@ -36,7 +36,7 @@ const TodoList = ({ todo, setTodoList, isDark, width }) => {
             {todo.isComplete ? (
               <div className="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-[#7ab1f5] to-[#9f71eb]">
                 <img
-                  className={`h-3 w-3 select-none ${width <= 640 && "h-2 w-2"}`}
+                  className="h-2 w-2 select-none sm:h-3 sm:w-3"
                   src={CheckIcon}
                   alt="check icon"
                 />
